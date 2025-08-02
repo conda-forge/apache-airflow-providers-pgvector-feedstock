@@ -1,5 +1,5 @@
 {% set name = "apache-airflow-providers-pgvector" %}
-{% set version = "1.5.1" %}
+{% set version = "1.5.2" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/apache_airflow_providers_pgvector-{{ version }}.tar.gz
-  sha256: 63f05a614b6e31130907a948ad17aeb62fc8720d3137692d86edb428304e9e26
+  sha256: 9523fa51a0f9f52b98ce11fb88d58256fdab57379bae08685962fba4565c84dd
 
 build:
   noarch: python
