@@ -1,5 +1,5 @@
 {% set name = "apache-airflow-providers-pgvector" %}
-{% set version = "1.5.2" %}
+{% set version = "1.5.3" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/apache_airflow_providers_pgvector-{{ version }}.tar.gz
-  sha256: 9523fa51a0f9f52b98ce11fb88d58256fdab57379bae08685962fba4565c84dd
+  sha256: 0d3e0cf42501d029776b9c5e3bf3dbc67ca52ad6f3caebb2bbaa9f48b1ef27b1
 
 build:
   noarch: python
@@ -21,6 +21,8 @@ requirements:
     - flit-core ==3.12.0
     - pip
   run:
+    - apache-airflow-providers-common-compat >=1.8.0
+    - pgvector >=0.3.1
     - python >={{ python_min }}
     - apache-airflow >=2.10.0
     - apache-airflow-providers-postgres >=5.7.1
