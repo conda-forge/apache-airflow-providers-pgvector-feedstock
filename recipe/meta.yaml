@@ -1,6 +1,5 @@
 {% set name = "apache-airflow-providers-pgvector" %}
-{% set version = "1.5.3" %}
-{% set python_min = "3.10" %}
+{% set version = "1.5.4" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/apache_airflow_providers_pgvector-{{ version }}.tar.gz
-  sha256: 0d3e0cf42501d029776b9c5e3bf3dbc67ca52ad6f3caebb2bbaa9f48b1ef27b1
+  sha256: b7902ae9d2fd00d9627d68d243e25170541d57844adf2c0eb548968fc12c8a81
 
 build:
   noarch: python
@@ -40,7 +39,9 @@ about:
   home: https://github.com/apache/airflow/
   summary: Provider package apache-airflow-providers-pgvector for Apache Airflow
   license: Apache-2.0
-  license_file: src/airflow/providers/pgvector/LICENSE
+  license_file:
+    - LICENSE
+    - NOTICE
   license_family: Apache
   doc_url: https://airflow.apache.org/docs/apache-airflow-providers-pgvector/stable/index.html
   dev_url: https://github.com/apache/airflow/
