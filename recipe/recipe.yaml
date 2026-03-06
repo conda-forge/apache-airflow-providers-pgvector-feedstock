@@ -24,7 +24,7 @@ requirements:
     - python >=${{ python_min }}
     - apache-airflow >=2.11.0
     - apache-airflow-providers-common-compat >=1.8.0
-    - apache-airflow-providers-postgres >=5.7.1
+    - apache-airflow-providers-postgres >=6.6.0
     - pgvector-python >=0.3.1
 
 tests:
