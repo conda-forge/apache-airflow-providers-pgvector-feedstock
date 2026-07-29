@@ -1,6 +1,6 @@
 context:
   name: apache-airflow-providers-pgvector
-  version: "1.7.2"
+  version: "1.7.3"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/apache_airflow_providers_pgvector-${{ version }}.tar.gz
-  sha256: dc8755257f889a1294ec031c552f2efbdc311a1c97614ccb85fc281f42723d52
+  sha256: fc17361307281792e16f7068e1dfa67031a25bd1d65d1dc6d367a2bc4154dfdb
 
 build:
   noarch: python
