@@ -1,6 +1,6 @@
 context:
   name: apache-airflow-providers-pgvector
-  version: "1.7.3"
+  version: "1.7.4"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/apache_airflow_providers_pgvector-${{ version }}.tar.gz
-  sha256: fc17361307281792e16f7068e1dfa67031a25bd1d65d1dc6d367a2bc4154dfdb
+  sha256: ced8e79a41bd01474cf510b431655ced13ea33edc7bb124375d0c6de19f7d38d
 
 build:
   noarch: python
@@ -19,7 +19,7 @@ requirements:
   host:
     - python ${{ python_min }}.*
     - pip
-    - flit-core ==3.12.0
+    - flit-core ==4.1.0
   run:
     - python >=${{ python_min }}
     - apache-airflow >=2.11.0
